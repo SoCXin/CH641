@@ -1,7 +1,7 @@
 ﻿# [CH641](https://github.com/SoCXin/CH641)
 
 * [WCH](http://www.wch.cn/)：[RISC-V](https://github.com/SoCXin/RISC-V)
-* [L1R3](https://github.com/SoCXin/Level): 48 MHz
+* [L1R1](https://github.com/SoCXin/Level): 48 MHz
 
 ## [简介](https://github.com/SoCXin/CH641/wiki)
 
