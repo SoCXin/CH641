@@ -26,16 +26,16 @@ jobs:
       - name: Checkout Docs
         uses: actions/checkout@v4
         with:
-          repository: SoCXin/docs
+          repository: SoCXin/vendor-wch
           token: ${{ secrets.SOC_XIN_TOCKEN }}
-          ref: ${{ env.DOCS_FOR }}
+          ref: main
           fetch-depth: 1
           path: www
 
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
+          python-version: '3.13'
 
       - name: Install dependencies
         working-directory: www
@@ -116,4 +116,4 @@ jobs:
           personal_token: ${{ secrets.SOC_XIN_TOCKEN }}
           external_repository: ${{ env.DOCS_REPO }}
           publish_dir: ./${{ env.DOCS_DIR }}
-          commit_message: Sync Docs
+          commit_message: Sync Vendor WCH Docs
