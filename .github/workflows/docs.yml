@@ -35,7 +35,7 @@ jobs:
       - name: Checkout CH641
         uses: actions/checkout@v4
         with:
-          path: wch/ch641
+          path: wch/source/ch641
 
       - name: Setup Python
         uses: actions/setup-python@v5
