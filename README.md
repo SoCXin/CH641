@@ -5,7 +5,9 @@
 
 ## [简介](https://github.com/SoCXin/CH641/wiki)
 
-[CH641](https://www.wch.cn/products/CH641.html)系列是基于青稞RISC-V2A内核设计的PD无线充电专用微控制器。该系列具有宽压、单线调试、低功耗、外围精简等特点。CH641内置PD PHY、BC接口、差分输入电流采样和交流小信号放大解码器，支持USB PD及Type-C快充功能、BC1.2及DCP等多种高压充电协议，提供了DMA控制器、10位模数转换ADC、多组定时器、USART串口、I2C等丰富的外设资源，提供过压保护和过温保护。
+[CH641](https://www.wch.cn/products/CH641.html)系列是基于[QingKe-青稞RISC-V2A](https://www.wch.cn/products/QingKe.html)内核设计的PD无线充电专用微控制器。该系列具有宽压、单线调试、低功耗、外围精简等特点。CH641内置PD PHY、BC接口、差分输入电流采样和交流小信号放大解码器，支持USB PD及Type-C快充功能、BC1.2及DCP等多种高压充电协议，提供了DMA控制器、10位模数转换ADC、多组定时器、USART串口、I2C等丰富的外设资源，提供过压保护和过温保护。
+
+[![sites](docs/ch641.jpg)](http://www.wch.cn/products/CH641.html)
 
 ``` mermaid
 gantt
@@ -41,5 +43,5 @@ gantt
 
 ## [选型建议](https://github.com/SoCXin)
 
-[CH641](https://github.com/SoCXin/CH641) 基于[QingKe](https://www.wch.cn/products/QingKe.html)内核
+[CH641](https://github.com/SoCXin/CH641)
 
