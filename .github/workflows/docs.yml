@@ -23,34 +23,39 @@ jobs:
           submodules: "recursive"
           fetch-depth: 1
 
-      - name: Checkout Docs
+      - name: Checkout Vendor
         uses: actions/checkout@v4
         with:
           repository: SoCXin/vendor-wch
           token: ${{ secrets.SOC_XIN_TOCKEN }}
           ref: main
           fetch-depth: 1
-          path: www
+          path: wch
+
+      - name: Checkout CH641
+        uses: actions/checkout@v4
+        with:
+          path: wch/ch641
 
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.13'
+          python-version: '3.12'
 
       - name: Install dependencies
-        working-directory: www
+        working-directory: wch
         run: |
           python -m pip install --upgrade pip
           pip install tox
 
       - name: Build docs
-        working-directory: www
+        working-directory: wch
         run: |
           tox -e docs
 
       - name: Preserve Docs
         run: |
-          tar -czvf docs.tar.gz -C www/_build html rtdpage
+          tar -czvf docs.tar.gz -C wch/_build html rtdpage
 
       - name: Save artifact
         uses: actions/upload-artifact@v4
