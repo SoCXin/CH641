@@ -1,12 +1,9 @@
 name: docs
 
 on:
-  workflow_dispatch:
-  schedule:
-    - cron: '02 12 * * *'
   push:
     branches:
-      - master
+      - main
 
 env:
   DOCS_FOR: wch
