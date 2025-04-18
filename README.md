@@ -11,10 +11,11 @@
 
 ``` mermaid
 gantt
-    title CH641 SDK
+    title CH641 EVT
     dateFormat  YYYY-MM-DD
     section Mainline Release
-    v1.0           :a1, 2024-06-01, 2024-09-30
+    v1.2           :a1, 2024-03-11, 2025-03-11
+    v1.4           :a1, 2025-03-11, 2025-09-30
 ```
 
 ### 关键特性
@@ -39,7 +40,7 @@ gantt
 * [参考资源](src/)
 * [参考文档](docs/)
 * [参考工程](project/)
-* [mounriver开发环境](http://www.mounriver.com/download)
+* [mounriver](http://www.mounriver.com/download)
 
 ## [选型建议](https://github.com/SoCXin)
 
